@@ -1,0 +1,32 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style x:Key="SansStyle" TargetType="Run">
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Background" Value="Black"/>
+        <Setter Property="FontFamily" Value="Comic Sans MS"/>
+        <Setter Property="FontSize" Value="16"></Setter>
+    </Style>
+
+    <Style x:Key="completelyNewType" TargetType="Run">
+        <Setter Property="Control.FontWeight" Value="Bold" />
+        <Setter Property="Foreground" Value="Brown"/>
+        <Setter Property="Background" Value="Aqua"/>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="FontSize" Value="24"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="Complicated" TargetType="Run">
+        <Setter Property="Foreground" Value="Yellow"/>
+        <Setter Property="Background" Value="Black"/>
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="FontStretch" Value="Expanded"/>
+        <Setter Property="FontStyle" Value="Italic"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="FontFamily" Value="Comic Sans MS"/>
+    </Style>
+
+</ResourceDictionary>
